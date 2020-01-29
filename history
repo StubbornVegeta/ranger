@@ -1,0 +1,50 @@
+open_with ~/nvim.appimage
+open_with 0
+search usrljj
+search fcik
+select-editor
+open_with $EDITOR -- "nvim"
+select_file 
+search vim
+find c
+open_with `
+rename vegeta.vim
+search mark
+q
+quitall !
+find mar
+quit
+find coc
+search Pr
+find tex_p
+open_with hh
+q 
+find nv
+rename space
+find
+search level
+find vi-
+find git
+find hl
+open_wi
+q!
+FZF
+fzf
+fzf_select
+find ff
+find rang
+f
+fzf_select 
+rename VIM#fzf
+rename VIM#fzf#history
+rename VIM#fzf#buffer
+rename VIM#fzf#lines
+open_with 
+open_with nvim
+[
+delete
+find i3
+open_with%space
+open_with 1
+open_with
+
