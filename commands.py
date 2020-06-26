@@ -2022,3 +2022,30 @@ class fzf_select(Command):
                 self.fm.cd(fzf_file)
             else:
                 self.fm.select_file(fzf_file)
+
+
+class efig(Command):
+    """
+    :efig <fname>
+
+    extract all image from pdf.
+
+    Will create a folder named "images" in the current folder.
+
+    """
+    def execute(self):
+        from subprocess import call
+
+        if not os.path.exists("images"):
+            os.makedirs("images")
+
+        if not self.arg(1):
+            input_file = self.fm.thisfile.path
+        else:
+            input_file = self.rest(1)
+
+        output = input_file[0:-4]
+        call(['pdfimages', '-png', input_file, 'images/'+output])
+
+    def tab(self, tabnum):
+        return self._tab_directory_content()

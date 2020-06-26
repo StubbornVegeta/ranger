@@ -1,50 +1,50 @@
-open_with ~/nvim.appimage
-open_with 0
-search usrljj
-search fcik
-select-editor
-open_with $EDITOR -- "nvim"
-select_file 
-search vim
-find c
-open_with `
-rename vegeta.vim
-search mark
-q
-quitall !
-find mar
-quit
-find coc
-search Pr
-find tex_p
-open_with hh
-q 
-find nv
-rename space
-find
-search level
-find vi-
-find git
-find hl
-open_wi
-q!
-FZF
-fzf
-fzf_select
-find ff
-find rang
-f
-fzf_select 
-rename VIM#fzf
-rename VIM#fzf#history
-rename VIM#fzf#buffer
-rename VIM#fzf#lines
-open_with 
-open_with nvim
-[
-delete
-find i3
-open_with%space
-open_with 1
+search model
+search python3.7
+search SVM
+rename c.jpg
+search surf
+s
+find gnome-
+search si
+searc
+find site
+find si
+find k
+find keras
 open_with
+find eegn
+search python3Q
+search python
+search python3-
+search python3
+search jedi
+help 
+help
+move latex
+search site
+search md
+find md
+search paper
+search texmf
+open_with 
+rename MLSum10year.pdf
+ef
+efig -i MLSum10year.pdf
+! efig -i MLSum10year.pdf
+!efig -i MLSum10year.pdf
+terminal efig -i MLSum10year.pdf
+t
+terminal 
 
+shell --help
+shell touch a
+shell python3 ~/script/efig.py -i MLSum10year.pdf
+search sc
+search
+shell python3 ~/scripts/efig.py -i MLSum10year.pdf
+shell efig -i MLSum10year.pdf
+fzf_select 
+efigs ML
+efigs MLSum10year.pdf
+efig MLSum10year.pdf
+delete
