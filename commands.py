@@ -2028,7 +2028,7 @@ class efig(Command):
     """
     :efig <fname>
 
-    extract all image from pdf.
+    Extract all image from pdf.
 
     Will create a folder named "images" in the current folder.
 
@@ -2049,3 +2049,26 @@ class efig(Command):
 
     def tab(self, tabnum):
         return self._tab_directory_content()
+
+class pdf2img(Command):
+    """
+    :pdf2img <fname>
+
+    Convert PDF-file to image
+    """
+    def execute(self):
+        import tempfile
+        from pdf2image import convert_from_path,convert_from_bytes
+
+        if not self.arg(1):
+            pdf_file = self.fm.thisfile.path
+        else:
+            pdf_file = self.rest(1)
+
+        output = pdf_file[0:-4]
+        with tempfile.TemporaryDirectory() as path:
+            image_from_path = convert_from_path(pdf_file, dpi=400, fmt='png', output_folder='.', output_file=output)
+
+    def tab(self, tabnum):
+        return self._tab_directory_content()
+
