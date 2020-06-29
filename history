@@ -1,3 +1,4 @@
+search tex
 search model
 search python3.7
 search SVM
@@ -24,7 +25,6 @@ move latex
 search site
 search md
 find md
-search paper
 search texmf
 open_with 
 rename MLSum10year.pdf
@@ -38,13 +38,13 @@ terminal
 
 shell --help
 shell touch a
+shell efig -i MLSum10year.pdf
 shell python3 ~/script/efig.py -i MLSum10year.pdf
 search sc
 search
 shell python3 ~/scripts/efig.py -i MLSum10year.pdf
-shell efig -i MLSum10year.pdf
-fzf_select 
-efigs ML
-efigs MLSum10year.pdf
-efig MLSum10year.pdf
+pdf2img cspQ2nn.pdf
+search paper
+efig schirrmeister2017.pdf
 delete
+pdf2img csp2nn.pdf
