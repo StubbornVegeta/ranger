@@ -2067,7 +2067,7 @@ class pdf2img(Command):
 
         output = pdf_file[0:-4]
         with tempfile.TemporaryDirectory() as path:
-            image_from_path = convert_from_path(pdf_file, dpi=400, fmt='png', output_folder='.', output_file=output)
+            image_from_path = convert_from_path(pdf_file, dpi=600, fmt='png', output_folder='.', output_file=output)
 
     def tab(self, tabnum):
         return self._tab_directory_content()
